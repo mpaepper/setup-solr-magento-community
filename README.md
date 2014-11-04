@@ -3,7 +3,11 @@ setup-solr-magento-community
 
 How to setup Solr for Magento Community edition version 1.9
 
-This How-To describes the necessary steps to setup Solr in Magento community edition 1.9 using the excellent module which integrates Solr into Magento by Jeroen Vermeulen: https://github.com/jeroenvermeulen/magento-solarium
+This How-To describes the necessary steps to setup Solr in Magento community edition 1.9 using the excellent module which integrates Solr into Magento by Jeroen Vermeulen: https://github.com/jeroenvermeulen/magento-solarium.
+
+It took me some time to get this running, so maybe it will help some of you.
+
+In case, anything is missing or you have further improvements / caveats - feel free to submit pull requests :)
 
 I used Ubuntu 14 / 12 for this.
 
