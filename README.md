@@ -41,7 +41,7 @@ The following steps are needed:
   * ```sudo vi /etc/logrotate.d/solr -> /var/log/solr/solr.log { copytruncate daily rotate 5 compress missingok create 640 tomcat7 tomcat7 }``` (This will make sure the log file does not grow indefinitely)
 * Restart Tomcat ```sudo /etc/init.d/tomcat7 restart```
 * Optional: Secure your Tomcat to only use given IPs:
-  * ```sudo vi /etc/tomcat7/context.xml``` -> Add ```<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.0\.0\.1|65\.182\.48\.139"/>``` within <Context> to allow only localhost and our IP address
+  * ```sudo vi /etc/tomcat7/context.xml``` -> Add ```<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.0\.0\.1|65\.182\.48\.139"/>``` within ```<Context>``` node to allow only localhost and our IP address
   * Restart Tomcat again
 * Check if Solr is working: http://localhost:8080/solr should show Solr admin panel
 * Configure the module by inputting your Solr connection data in the Magento backend in System Configuration
